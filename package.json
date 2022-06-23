@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server"
+    "dev": "nodemon src/server",
+    "start": "pm2 start src/server.js --name smax",
+    "delete": "pm2 delete smax"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.57.0",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "pm2": "^5.2.0"
   }
 }
